@@ -11,25 +11,25 @@ import commands
 while(1):
 	a = raw_input(u'请确认(yes/no): ')
 	if a == "yes":
-		commands.getoutput("rm -rf /apps/bak/static01 /apps/bak/ui_template01")
+		commands.getoutput("rm -rf /apps/bak/s01 /apps/bak/u01")
 	
-		commands.getoutput("cp -rf /apps/bak/static02/ /apps/bak/static01/")
-		commands.getoutput("rm -rf /apps/bak/static02/")
+		commands.getoutput("cp -rf /apps/bak/s02/ /apps/bak/s01/")
+		commands.getoutput("rm -rf /apps/bak/s02/")
 	
-		commands.getoutput("cp -rf /apps/bak/ui_template02/ /apps/bak/ui_template01/")
-		commands.getoutput("rm -rf /apps/bak/ui_template02/")
+		commands.getoutput("cp -rf /apps/bak/u02/ /apps/bak/u01/")
+		commands.getoutput("rm -rf /apps/bak/u02/")
 	
-		commands.getoutput("cp -rf /apps/bak/ui_template03/ /apps/bak/ui_template02/")
-		commands.getoutput("rm -rf /apps/bak/ui_template03/")
+		commands.getoutput("cp -rf /apps/bak/u03/ /apps/bak/u02/")
+		commands.getoutput("rm -rf /apps/bak/u03/")
 	
-		commands.getoutput("cp -rf /apps/static /apps/bak/static02/")
-		commands.getoutput("rm -rf /apps/static")
+		commands.getoutput("cp -rf /apps/s /apps/bak/s02/")
+		commands.getoutput("rm -rf /apps/s")
 		
-		commands.getoutput("cp -rf /apps/ui_template /apps/bak/ui_template03/")
-		commands.getoutput("rm -rf /apps/ui_template")
+		commands.getoutput("cp -rf /apps/u /apps/bak/u03/")
+		commands.getoutput("rm -rf /apps/u")
 	
-		commands.getoutput("cp -rf /data/static /apps/")
-		commands.getoutput("cp -rf /data/ui_template /apps/")
+		commands.getoutput("cp -rf /data/s /apps/")
+		commands.getoutput("cp -rf /data/u /apps/")
 	
 		commands.getoutput("python /opt/comperfile/test.py")
 		print u'成功！！！'

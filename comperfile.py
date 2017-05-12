@@ -51,8 +51,8 @@ with open('/opt/comperfile/result/out.txt', 'r') as f:
                 g.write(line)
 shutil.move('/opt/comperfile/result/outs.txt', '/opt/comperfile/result/out.txt')
 
-number1 =int(commands.getoutput("find /apps/static -type f | wc -l"))
-number2 =int(commands.getoutput("find /apps/ui_template -type f | wc -l"))
+number1 =int(commands.getoutput("find /apps/s -type f | wc -l"))
+number2 =int(commands.getoutput("find /apps/u -type f | wc -l"))
 number = number1 + number2
 
 mobile = '18888888888'
