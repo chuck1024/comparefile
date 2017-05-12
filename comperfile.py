@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+
+__author__='chuck1024'
+
 import sys
 reload(sys)
 sys.setdefaultencoding("utf-8")
